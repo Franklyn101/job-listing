@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  .container {
+    background-color: #effafa;
+    min-height: 100vh;
+  }
+  .header {
+    background: url(../images/bg-header-desktop.svg), #5ba4a4;
+    height: 15rem;
+    /* position: relative; */
+  }
+  
+  .input-container {
+    margin-top: -3rem;
+    padding: 0 3rem;
+  }
+  .input-box {
+    max-width: 140rem;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .input-name {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    background-color: #eef6f6;
+    /* padding: 0.4rem 0.8rem; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .input-text {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  
+    font-weight: 700;
+    color: #5ba4a4;
+  }
+  .remove-icon {
+    background-color: #5ba4a4;
+    padding: 0.5rem;
+  }
+  .remove-icon:hover {
+    background-color: #2c3a3a;
+  }
+  
+  .clear {
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5ba4a4;
+  }
+  .clear:hover {
+    text-decoration: underline;
+  }
+  .job-section {
+    margin: 0 auto;
+    max-width: 140rem;
+    padding: 10rem 3rem;
+  }
+  
+  .con {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .job-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+  .job-img {
+    height: 10rem;
+    width: 10rem;
+  }
+  
+  .job-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .job-heading-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .job-company {
+    color: #5ba4a4;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .job-new {
+    background-color: #5ba4a4;
+  }
+  
+  .job-featured {
+    /* font-size: 1.2rem; */
+    background-color: #2c3a3a;
+  }
+  .job-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3a3a;
+  }
+  
+  .job-title:hover {
+    color: #5ba4a4;
+  }
+  .more-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .job-skills {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  
+  .skill {
+    color: #5ba4a4;
+    font-weight: 700;
+    font-size: 1.3rem;
+    background-color: #eef6f6;
+    padding: 0.8rem;
+  }
+  
+  .skill:hover {
+    background-color: #5ba4a4;
+    color: #fff;
+  }
+
+  
+
+
+
+
+/* utilities */
+
+.featured-border {
+    border-left: 0.6rem solid #5ba4a4;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .job-container,
+  .input-box {
+    box-shadow: 0px 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill,
+  .job-title,
+  .remove-icon,
+  .clear {
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .job-date,
+  .job-type,
+  .job-location {
+    font-size: 1.4rem;
+    color: hsl(180, 8%, 52%);
+  }
+  
+  .job-new,
+  .job-featured {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    /* font-size: 1.2rem; */
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+
+  @media (max-width: 53.125em) {
+    .header {
+      background: url(../images/bg-header-mobile.svg), #5ba4a4;
+    }
+  
+    .job-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .con {
+      gap: 7rem;
+    }
+  
+    .job-img {
+      margin-top: -5rem;
+      height: 6rem;
+      width: 6rem;
+    }
+  
+    .job-description {
+      gap: 1.6rem;
+    }
+  
+    .job-description {
+      width: 100%;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #00000067;
+    }
+  
+    .job-skills {
+      margin-left: 0;
+    }
+  }
+  
